@@ -1,1 +1,25 @@
-
+apiVersion: containerapp.azure.upbound.io/v1beta2
+kind: ContainerApp
+metadata:
+  name: crossplane-containerapp
+spec:
+  forProvider:
+    containerAppEnvironmentIdRef:
+      name: crossplane-containerapp-env    
+    resourceGroupName: pep-rg-eus
+    revisionMode: Single
+    secret:
+      - nameSecretRef:
+          key: name
+          name: containerapp-secret
+          namespace: crossplane-system
+        valueSecretRef:
+          key: value
+          name: containerapp-secret
+          namespace: crossplane-system
+    template:
+      container:
+        - cpu: 0.5
+          image: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
+          memory: 0.75Gi
+          name: examplecontainerapp
