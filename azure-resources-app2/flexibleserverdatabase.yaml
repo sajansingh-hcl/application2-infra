@@ -1,0 +1,10 @@
+apiVersion: dbforpostgresql.azure.upbound.io/v1beta1
+kind: FlexibleServerDatabase
+metadata:
+  name: crossplane-flexibleserverdatabase
+spec:
+  forProvider:
+    charset: utf8
+    collation: en_US.utf8
+    serverIdRef: 
+      name: flexiblesvr
