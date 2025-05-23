@@ -1,0 +1,19 @@
+apiVersion: dbforpostgresql.azure.upbound.io/v1beta2
+kind: FlexibleServer
+metadata:
+  name: flexiblesvr
+spec:
+  forProvider:
+    administratorLogin: psqladmin
+    administratorPasswordSecretRef:
+      key: example-key
+      name: example-secret
+      namespace: crossplane-system
+    autoGeneratePassword: true
+    location: East US 2
+    publicNetworkAccessEnabled: false
+    resourceGroupName: pep-rg-eus
+    skuName: GP_Standard_D4s_v3
+    storageMb: 32768
+    storageTier: P30
+    version: "16"
