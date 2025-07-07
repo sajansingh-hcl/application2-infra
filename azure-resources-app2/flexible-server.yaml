@@ -15,5 +15,5 @@ spec:
     resourceGroupName: hcl-cus-rsg-d-genai
     skuName: B_Standard_B1ms  # Lower-cost burstable SKU
     storageMb: 32768   # Reduced storage
-    storageTier: P10          # Lower-cost storage tier
+    storageTier: P4          # Lower-cost storage tier
     version: "16"
