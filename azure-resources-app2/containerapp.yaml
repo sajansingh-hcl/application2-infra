@@ -5,8 +5,8 @@ metadata:
 spec:
   forProvider:
     containerAppEnvironmentIdRef:
-      name: crossplane-containerapp-env    
-    resourceGroupName: pep-rg-eus
+      name: crossplane-containerapp-env   
+    resourceGroupName: hcl-cus-rsg-d-genai
     revisionMode: Single
     secret:
       - nameSecretRef:

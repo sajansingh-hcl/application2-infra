@@ -10,10 +10,10 @@ spec:
       name: example-secret
       namespace: crossplane-system
     autoGeneratePassword: true
-    location: East US 2
+    location: Central US
     publicNetworkAccessEnabled: false
-    resourceGroupName: pep-rg-eus
-    skuName: GP_Standard_D4s_v3
-    storageMb: 32768
-    storageTier: P30
+    resourceGroupName: hcl-cus-rsg-d-genai
+    skuName: B_Standard_B1ms  # Lower-cost burstable SKU
+    storageMb: 32768   # Reduced storage
+    storageTier: P10          # Lower-cost storage tier
     version: "16"
