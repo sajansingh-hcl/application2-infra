@@ -19,7 +19,7 @@ spec:
           namespace: crossplane-system
     template:
       container:
-        - cpu: 0.5
+        - cpu: 0.25
           image: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
-          memory: 1.0Gi
+          memory: 0.5Gi
           name: examplecontainerapp
