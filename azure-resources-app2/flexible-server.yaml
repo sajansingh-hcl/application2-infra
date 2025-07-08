@@ -12,8 +12,8 @@ spec:
     autoGeneratePassword: true
     location: Central US
     publicNetworkAccessEnabled: false
-    resourceGroupName: hcl-cus-rsg-d-genai
-    skuName: B_Standard_B1ms  # Lower-cost burstable SKU
-    storageMb: 65536   # Reduced storage
-    storageTier: P4       # Lower-cost storage tier
+    resourceGroupName: pep-rg-eus
+    skuName: GP_Standard_D4s_v3
+    storageMb: 32768
+    storageTier: P30
     version: "16"
