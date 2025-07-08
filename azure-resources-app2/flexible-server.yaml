@@ -15,5 +15,5 @@ spec:
     resourceGroupName: hcl-cus-rsg-d-genai
     skuName: GP_Standard_D4s_v3
     storageMb: 65536
-    storageTier: P4
+    storageTier: P30
     version: "16"
