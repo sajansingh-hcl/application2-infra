@@ -12,8 +12,8 @@ spec:
     autoGeneratePassword: true
     location: Central US
     publicNetworkAccessEnabled: false
-    resourceGroupName: pep-rg-eus
+    resourceGroupName: hcl-cus-rsg-d-genai
     skuName: GP_Standard_D4s_v3
-    storageMb: 65536
-    storageTier: P30
+    storageMb: 32768
+    storageTier: P4
     version: "16"
