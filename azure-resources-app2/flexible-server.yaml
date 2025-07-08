@@ -14,6 +14,6 @@ spec:
     publicNetworkAccessEnabled: false
     resourceGroupName: hcl-cus-rsg-d-genai
     skuName: B_Standard_B1ms  # Lower-cost burstable SKU
-    storageMb: 32768   # Reduced storage
-    storageTier: P10          # Lower-cost storage tier
+    storageMb: 65536   # Reduced storage
+    storageTier: P4       # Lower-cost storage tier
     version: "16"
